@@ -4,7 +4,7 @@ function Title() {
     return (
         <div>
             <h1>Employee Directory</h1>
-            <div className="Title-Subtitle">Say hello to your work neighbor!</div>
+            <h2>Welcome to the employee directory!</h2>
         </div>
     )
 }
