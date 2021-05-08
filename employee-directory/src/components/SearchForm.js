@@ -8,10 +8,9 @@ function SearchForm(props) {
         <input
           onChange={props.handleInputChange}
           value={props.search}
-          name="search"
           type="text"
           className="form-control"
-          placeholder="Search for a Gif"
+          placeholder="Search for Last Name"
           id="search"
         />
         <button onClick={props.handleFormSubmit} className="btn btn-primary mt-3">

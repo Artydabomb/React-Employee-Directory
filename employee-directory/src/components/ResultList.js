@@ -7,11 +7,12 @@ function ResultList(props) {
     <>
       <table>
         <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th onClick={props.handleAgeFilter}>Age</th>
           <th>Email</th>
           <th>Phone Number</th>
+          <th>Picture</th>
         </tr>
         {props.results.map((result) => (
           <tr className="list-group-item" key={result.id}>
@@ -20,6 +21,7 @@ function ResultList(props) {
             <td>{result.dob.age}</td>
             <td>{result.email}</td>
             <td>{result.cell}</td>
+            <td><img src={result.picture.large} alt="Employee Picture"></img></td>
           </tr>
         ))}
       </table>
