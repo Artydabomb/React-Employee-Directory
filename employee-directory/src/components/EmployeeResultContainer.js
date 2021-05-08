@@ -16,17 +16,17 @@ class EmployeeResultContainer extends Component {
 
   //removed "query" parameter
 
-  // searchEmployee = () => {
-  //   API.search()
-  //     .then(res => this.setState({ results: res.data.data }))
-  //     .catch(err => console.log(err));
-  // };
-
   searchEmployee = () => {
     API.search()
-      .then(res => console.log("res", res))
+      .then(res => this.setState({ results: res.data.results }))
       .catch(err => console.log(err));
   };
+
+  // searchEmployee = () => {
+  //   API.search()
+  //     .then(res => console.log("res", res.data))
+  //     .catch(err => console.log(err));
+  // };
 
   // handleInputChange = event => {
   //   const name = event.target.name;
