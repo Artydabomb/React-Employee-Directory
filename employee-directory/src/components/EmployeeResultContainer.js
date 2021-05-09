@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import SearchForm from "./SearchForm";
 import ResultList from "./ResultList";
 import API from "../utils/API";
+import "./Table.css";
 
 class EmployeeResultContainer extends Component {
   state = {
@@ -56,7 +57,7 @@ class EmployeeResultContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="Table">
         <SearchForm
           search={this.state.search}
           handleFormSubmit={this.handleFormSubmit}

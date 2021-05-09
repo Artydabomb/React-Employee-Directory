@@ -4,7 +4,7 @@ function ResultList(props) {
   console.log("props, resultLit", props);
 
   return (
-    <>
+    <div className="Table">
       <table>
         <tr>
           <th>First Name</th>
@@ -25,7 +25,7 @@ function ResultList(props) {
           </tr>
         ))}
       </table>
-    </>
+    </div>
   );
 }
 

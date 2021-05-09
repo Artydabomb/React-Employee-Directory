@@ -5,7 +5,7 @@ function Title() {
         <>
             <div>
                 <h1>Employee Directory</h1>
-                <h2>Welcome to the employee directory!</h2>
+                <h2>Welcome to the Employee Directory!</h2>
 
             </div>
         </>
